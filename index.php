@@ -24,16 +24,18 @@ fornecido
             <div>
                 <h3>Resultado:</h3>
                 <?php
-                    $num = $_GET['numero'];
-                    if($num > -1){
-                        echo($num);
-                    }else{
-                        $num = $num * (-1);
-                        echo($num);
+                    if(isset($_GET['numero'])){
+                       $num = $_GET['numero'];
+                       if($num > -1){
+                            echo($num);
+                       }else{
+                            $num = $num * (-1);
+                            echo($num);
+                       }
                     }
                 ?>
                 
-            <!-- <p><?= $numero ?></p> - este comando será semelhante ao echo porém, será colocado fora do codigo php -->
+            <!-- <p><?= isset($numero) ? $numero:"" ?></p> - este comando será semelhante ao echo porém, será colocado fora do codigo php -->
             </div>
         </div>
     </body>
