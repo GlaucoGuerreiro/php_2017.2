@@ -35,7 +35,7 @@ fornecido
                     }
                 ?>
                 
-            <!-- <p><?= isset($numero) ? $numero:"" ?></p> - este comando será semelhante ao echo porém, será colocado fora do codigo php -->
+            <!-- <p><?= isset($num) ? $num : "" ?></p> - este comando será semelhante ao echo porém, será colocado fora do codigo php -->
             </div>
         </div>
     </body>
