@@ -7,18 +7,19 @@ and open the template in the editor.
 <html lang="pt-br">
     <head>
         <meta charset="UTF-8">
-        <title>Exercicio 05</title>
+        <title>Exercicio 06</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     </head>
     <body>
-        <!-- Escreva um programa para que leia um número e verifique se ele se encontra no
-intervalo entre 5 e 20. -->
+        <!-- Desenvolva um programa para ler dois valores inteiros e apresentar a adição
+destes valores quando o x > y, caso contrário, deve ser efetuado a multiplicação
+deles. -->
         <div class="container">
             <div class="rows">
-                <form method="POST" name="Ex05" action="#">
-                <legend>Está no intervalo de 5 a 20?</legend>
+                <form method="POST" name="Ex06" action="#">
+                <legend>Adição ou Multiplicação de valores</legend>
                 <fieldset>
-                    <label for="id_inteiro">Digite um número Inteiro</label>
+                    <label for="id_">Digite um número Inteiro</label>
                     <input type="number" id="id_inteiro" name="id_inteiro">
                 </fieldset>
                 <input type="submit" value="Enviar">

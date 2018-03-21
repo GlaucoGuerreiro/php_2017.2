@@ -7,7 +7,7 @@ and open the template in the editor.
 <html lang="pt-br">
     <head>
         <meta charset="UTF-8">
-        <title>Exercicio 02</title>
+        <title>Exercicio 03</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     </head>
     <body>
