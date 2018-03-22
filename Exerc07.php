@@ -7,17 +7,19 @@ and open the template in the editor.
 <html lang="pt-br">
     <head>
         <meta charset="UTF-8">
-        <title>Lista de Exercício 02 / Exercicio 06</title>
+        <title>Lista de Exercício 02 / Exercicio 07</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     </head>
     <body>
-        <!-- Desenvolva um programa para ler dois valores inteiros e apresentar a adição
-destes valores quando o x > y, caso contrário, deve ser efetuado a multiplicação
-deles. -->
+        <!-- Efetuar a leitura de dois números inteiros e apresentar a relação existente entre
+eles, ou seja:
+a. O primeiro é maior que o segundo
+b. São iguais
+c. O segundo maior que o primeiro -->
         <div class="container">
             <div class="rows">
-                <form method="POST" name="Ex06" action="#">
-                    <legend>Adição ou Multiplicação de valores</legend>
+                <form method="POST" name="Ex07" action="#">
+                    <legend>Relação entre Números</legend>
                     <fieldset>
                     <div class="form-groups"> 
                          <label for="id_num1">Digite o primeiro número</label>
@@ -36,13 +38,13 @@ deles. -->
                 if(isset($_POST['num1'])){
                 $num1 = $_POST['num1'];
                 $num2 = $_POST['num2'];
-                $resp;
+               
                 if($num1 > $num2){
-                    $resp = $num1 + $num2; 
-                    echo("$resp");
+                   echo("O Primeiro número é maior que o segundo");
+                }elseif($num1 == $num2){
+                    echo("Os números são iguais");
                 }else{
-                    $resp = $num1 * $num2;
-                    echo("$resp");
+                    echo("O Segundo número é maior que o primeiro");
                 }
                           
                 }
