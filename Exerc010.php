@@ -20,7 +20,7 @@ b. Se a prestação for igual a 20% do salário: “Empréstimo em analise”
 c. Se a prestação for menor que 20% do salário: “Empréstimo pode ser
 concedido”. -->
         <div class="container">
-            <div class="rows">
+            <div class="row">
                 <form method="POST" name="Ex010" action="#">
                 <legend>Análise para Empréstimo</legend>
                 <fieldset>
@@ -36,7 +36,7 @@ concedido”. -->
                 <input type="submit" value="Enviar">
                 </form>
             </div>
-            <div class="rows">
+            <div class="row">
                 <h3>Situação da Análise</h3>
                 
                 <?php

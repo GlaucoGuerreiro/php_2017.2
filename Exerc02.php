@@ -14,7 +14,7 @@ and open the template in the editor.
         <!-- Elabore um algoritmo para ler um valor inteiro e informar, através de uma
 mensagem se este valor é um número par ou ímpar. -->
         <div class="container">
-            <div class="rows">
+            <div class="row">
                 <form method="POST" name="Ex02" action="#">
                 <legend>Par ou Ímpar?</legend>
                 <fieldset>
@@ -24,7 +24,7 @@ mensagem se este valor é um número par ou ímpar. -->
                 <input type="submit" value="Enviar">
                 </form>
             </div>
-            <div class="rows">
+            <div class="row">
                 <?php
                 if(isset($_POST['id_inteiro'])){
                 $inteiro = $_POST['id_inteiro'];

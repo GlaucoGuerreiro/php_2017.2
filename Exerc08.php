@@ -15,7 +15,7 @@ and open the template in the editor.
 bissextos os divisíveis por 400. Desenvolva um programa para determinar se um
 ano informado é bissexto. -->
         <div class="container">
-            <div class="rows">
+            <div class="row">
                 <form method="POST" name="Ex08" action="#">
                 <legend>Ano Bissexto</legend>
                 <fieldset>
@@ -25,7 +25,7 @@ ano informado é bissexto. -->
                 <input type="submit" value="Enviar">
                 </form>
             </div>
-            <div class="rows">
+            <div class="row">
                 <?php
                 if(isset($_POST['ano'])){
                 $ano = $_POST['ano'];

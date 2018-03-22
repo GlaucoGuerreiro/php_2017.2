@@ -17,7 +17,7 @@ a. O primeiro é maior que o segundo
 b. São iguais
 c. O segundo maior que o primeiro -->
         <div class="container">
-            <div class="rows">
+            <div class="row">
                 <form method="POST" name="Ex07" action="#">
                     <legend>Relação entre Números</legend>
                     <fieldset>
@@ -33,7 +33,7 @@ c. O segundo maior que o primeiro -->
                 <input type="submit" value="Enviar">
                 </form>
             </div>
-            <div class="rows">
+            <div class="row">
                 <?php
                 if(isset($_POST['num1'])){
                 $num1 = $_POST['num1'];

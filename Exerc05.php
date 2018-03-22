@@ -14,7 +14,7 @@ and open the template in the editor.
         <!-- Escreva um programa para que leia um número e verifique se ele se encontra no
 intervalo entre 5 e 20. -->
         <div class="container">
-            <div class="rows">
+            <div class="row">
                 <form method="POST" name="Ex05" action="#">
                 <legend>Está no intervalo de 5 a 20?</legend>
                 <fieldset>
@@ -24,7 +24,7 @@ intervalo entre 5 e 20. -->
                 <input type="submit" value="Enviar">
                 </form>
             </div>
-            <div class="rows">
+            <div class="row">
                 <?php
                 if(isset($_POST['id_inteiro'])){
                 $inteiro = $_POST['id_inteiro'];

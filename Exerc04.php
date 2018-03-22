@@ -16,7 +16,7 @@ a. Exibir a mensagem “número negativo” se n &lt; 0.
 b. Exibir a mensagem “zero” se n = 0.
 c. Exibir a mensagem “número positivo” se n &gt; 0. -->
         <div class="container">
-            <div class="rows">
+            <div class="row">
                 <form method="POST" name="Ex04" action="#">
                 <legend>Positivo, Negativo ou Nulo?</legend>
                 <fieldset>
@@ -26,7 +26,7 @@ c. Exibir a mensagem “número positivo” se n &gt; 0. -->
                 <input type="submit" value="Enviar">
                 </form>
             </div>
-            <div class="rows">
+            <div class="row">
                 <?php
                 if(isset($_POST['id_inteiro'])){
                 $inteiro = $_POST['id_inteiro'];

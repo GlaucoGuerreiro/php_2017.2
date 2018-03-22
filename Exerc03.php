@@ -15,7 +15,7 @@ and open the template in the editor.
 múltiplo do segundo, seu programa deverá exibir a mensagem: “São múltiplos” ou
 “Não são múltiplos” dependendo da condição. -->
         <div class="container">
-            <div class="rows">
+            <div class="row">
                 <form method="POST" name="Ex03" action="#">
                 <legend>Números Múltiplos</legend>
                 <fieldset>
@@ -31,7 +31,7 @@ múltiplo do segundo, seu programa deverá exibir a mensagem: “São múltiplos
                 <input type="submit" value="Enviar">
                 </form>
             </div>
-            <div class="rows">
+            <div class="row">
                 <?php
                     if(isset($_POST['num1'])){
                     $num1 = $_POST['num1'];

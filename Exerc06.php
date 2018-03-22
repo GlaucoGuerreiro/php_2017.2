@@ -15,7 +15,7 @@ and open the template in the editor.
 destes valores quando o x > y, caso contrário, deve ser efetuado a multiplicação
 deles. -->
         <div class="container">
-            <div class="rows">
+            <div class="row">
                 <form method="POST" name="Ex06" action="#">
                     <legend>Adição ou Multiplicação de valores</legend>
                     <fieldset>
@@ -31,7 +31,7 @@ deles. -->
                 <input type="submit" value="Enviar">
                 </form>
             </div>
-            <div class="rows">
+            <div class="row">
                 <?php
                 if(isset($_POST['num1'])){
                 $num1 = $_POST['num1'];
