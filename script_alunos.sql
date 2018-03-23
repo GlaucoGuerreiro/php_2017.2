@@ -12,8 +12,8 @@
     use escola;
 
     create table alunos(
-    Matricula int primary key auto_increment,
     Nome varchar(100),
+    Matricula int primary key auto_increment,
     Telefone varchar(20)
 );
     
