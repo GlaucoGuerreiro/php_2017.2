@@ -2,7 +2,7 @@
 # inclusão do arquivo que abre a conexão com o banco de dados
 require_once './conexao.php';
 
-// Arquivo responsável pr fazer as transações com o banco de dados
+// Arquivo responsável por fazer as transações com o banco de dados
 
 # Função responsável por gravar os dados no banco
 function gravar($codigo, $nome, $modelo, $ano, $fabricante, $preco, $quantidade){
@@ -15,7 +15,11 @@ function gravar($codigo, $nome, $modelo, $ano, $fabricante, $preco, $quantidade)
     if(mysqli_query($link, $query)){
         return true;
     }
-    return false;
+    return false;    
+}
+
+# Função responsável por ler os dados gravados no banco
+function listar(){
     
 }
 
