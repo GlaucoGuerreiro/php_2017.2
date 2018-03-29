@@ -13,7 +13,7 @@ and open the template in the editor.
     <body>
         <div class="container">
             <div class="row">
-                <form action="cad_aluno.php" method="POST">
+                <form action="cad_aluno.php" method="post">
                     <legend>Cadastro de Alunos</legend>
                         <fieldset>
                         <div>
@@ -22,7 +22,7 @@ and open the template in the editor.
                         </div>
                         <div>
                             <label for="id_matricula">Matricula:</label>
-                            <input type="text" id="id_matricula" name="matricula">
+                            <input type="number" id="id_matricula" name="matricula">
                         </div>
                         <div>
                             <label for="id_telefone">Telefone:</label>

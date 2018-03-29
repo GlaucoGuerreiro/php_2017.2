@@ -12,9 +12,10 @@
     use escola;
 
     create table alunos(
-    Nome varchar(100),
-    Matricula int primary key auto_increment,
-    Telefone varchar(20)
+    id int primary key auto_increment,
+    nome varchar(100),
+    matricula int not null,
+    telefone varchar(20)
 );
     
 

@@ -3,7 +3,7 @@
     define("HOST", "localhost");
     define("USER", "root");
     define("PASS", "");
-    define("DB", "aluno");
+    define("DB", "escola");
     define("PORT", "3306");
     
     function conexao(){
