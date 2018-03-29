@@ -25,7 +25,7 @@ and open the template in the editor.
         <?php
             if(isset($_POST['valor'])){
             $valor = $_POST['valor'];
-            $rendimentos = $valor * 1.07;
+            $rendimentos = $valor * 1.007;
             echo (" O valor dos rendimentos após o mês é de: $rendimentos,00");
            
             }
