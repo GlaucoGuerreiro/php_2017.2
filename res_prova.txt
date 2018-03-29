@@ -1,4 +1,4 @@
-1- Ela permite que seja recuperada as informações inseridas no documento, url, etc.
+﻿1- Ela permite que seja recuperada as informações  de um formulário definido com método POST.
 
 2- Corretas: a e d
 exemplo a - $pagina = $_POST['pagina'];
@@ -7,11 +7,9 @@ exemplo d - $nome = $_GET['nome'];
 para iniciar um bloco PHP necessitamos <?php //code?>
 Quando queremos resgatar um valor de campo input do html usamos o atributo NAME
 
-3- Include é utilizado para inclusão de dados no documento.
-Require é utilizado para requisição dos dados de um documento.
+3- Ambos fazem a inclusão de arquivos na página. A diferença é que o include, ao encontrar erro, gera um alerta de erro e renderiza a página enquanto o require, gera um alerta de erro e não renderiza a página.
 
-4- z = 27
-   x = 645
-   y = 18.060
-   z = 672
-   a = 28
+4- x=640
+   y=17280
+   z=668
+   a=668
