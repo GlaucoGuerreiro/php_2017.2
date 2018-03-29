@@ -39,6 +39,8 @@ and open the template in the editor.
             echo ("O funcionário: $nome, possui o salário fixo de R$ $salario e receberá o total de R$ $salTotal.");
            
             }
+        
         ?>
+        </div>
     </body>
 </html>
