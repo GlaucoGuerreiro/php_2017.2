@@ -25,11 +25,11 @@ and open the template in the editor.
                     <li><a href="l3q1.php">exercicio 01</a></li>
                     <li><a href="l3q2.php">exercicio 02</a></li>
                     <li><a href="l3q3.php">exercicio 03</a></li>
-                    <li><a href="l1q1.php">exercicio 01</a></li>
-                    <li><a href="l1q1.php">exercicio 01</a></li>
-                    <li><a href="l1q1.php">exercicio 01</a></li>
-                    <li><a href="l1q1.php">exercicio 01</a></li>
-                    <li><a href="l1q1.php">exercicio 01</a></li>
+                    <li><a href="l3q4.php">exercicio 04</a></li>
+                    <li><a href="l3q5.php">exercicio 05</a></li>
+                    <li><a href="l3q6.php">exercicio 06</a></li>
+                    <li><a href="l3q1.php">exercicio 07</a></li>
+                    <li><a href="l3q1.php">exercicio 08</a></li>
                 </ul>
         </ul>
             
