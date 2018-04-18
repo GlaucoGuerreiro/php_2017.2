@@ -1,6 +1,6 @@
 <?php
     
-    require_once '.crud_contato.php';
+    require_once 'crud_contato.php';
     
     #$nome = $_POST['name']; - método que estavamos utilizando até o momento
     
@@ -10,10 +10,15 @@
     
     session_start();
     
-    if(setContato($name, $email, $message)){
-        $_SESSION['msg_success'] = "Mensagem enviada com sucesso.";        
+    if(setContato($nome, $email, $mensagem)){
+        $_SESSION['msg_success'] = "Mensagem enviada com sucesso."; 
+        header("Location: index.php#contact");
+        die();
+        
     }else{
         $_SESSION['msg_fail'] = "Falha ao enviar mensagem!";
+        header("Location: index.php#contact");
+        die();
     }
 
 

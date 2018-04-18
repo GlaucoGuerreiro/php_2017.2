@@ -1,3 +1,6 @@
+<?php
+    session_start();
+?>
 <!DOCTYPE HTML>
 <html>
 	<head>
@@ -11,6 +14,8 @@
 
 		<!-- Favicon -->
 		<link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/32px-PHP-logo.svg.png" />
+                
+                <style></style>
 	</head>
 	<body>
 
@@ -106,7 +111,18 @@
 						<p>Entre em contato conosco e conheça mais dessa linguagem fabulosa.</p>
 					</header>
 					<div class="box">
-						<form method="post" action="#">
+						<form method="post" action="contato.php">
+                                                    <?php
+                                                        if(isset($_SESSION['msg_success'])):
+                                                    ?>
+                                                    <p class="text-success"><?=$_SESSION['msg_success'] ?></p>
+                                                    <?php
+                                                        elseif(isset($_SESSION['msg_fail'])):
+                                                    ?>
+                                                    <p class="text-danger"><?=$_SESSION['msg_fail'] ?></p>
+                                                    <?php
+                                                        endif;
+                                                    ?>
 							<div class="field half first"><input type="text" name="name" placeholder="Nome" /></div>
 							<div class="field half"><input type="email" name="email" placeholder="Email" /></div>
 							<div class="field"><textarea name="message" placeholder="Messagem" rows="6"></textarea></div>
