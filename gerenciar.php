@@ -189,6 +189,8 @@ if (!isset($_SESSION['logado'])) {
                 <tr>
                     <td>
                         <h1 align="center">Bem Vindo <?= $usuario['nome'] ?></h1>
+                        
+                         <p align="center"><a href="#" data-target="#modalSenha" data-toggle="modal">Alterar Senha</a></p>
                         <p align="center"><a href="deslogar.php">Deslogar</a></p>                      
                     </td>
                 <div class="row">
@@ -258,6 +260,37 @@ if (!isset($_SESSION['logado'])) {
                 </div>     
                 </tr>
             </table>
+        </div>
+        
+        <div class="modal" tabindex="-1" role="dialog" id="modalSenha">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Alterar Senha</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <fieldset>
+                            <form id="formSenha" method="post" action="alteraSenha.php">
+                                <div class="form-group">
+                                    <label for="newPass">Nova Senha</label>
+                                    <input type="password" name="senhaNova" id="newPass" class="form-control" required/>
+                                </div>
+                                <div class="form-group">
+                                    <label for="oldPass">Senha Atual</label>
+                                    <input type="password" name="senhaVelha" id="oldPass" class="form-control" required/>
+                                </div>
+                            </form>
+                        </fieldset>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" form="formSenha" class="btn btn-primary">Alterar</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <!-- Optional JavaScript -->

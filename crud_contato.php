@@ -20,7 +20,7 @@
         return $contactList;
     }
     
-    # função para criar um contato específico
+    # função para localizar um contato específico pelo id
     function getContato($id){
         # definir a variável de conexão
         $link = getConnection();
@@ -33,7 +33,19 @@
             # retorna o contato carregado com os dados
             return $contact;
         }
-     
+    #função para localizar um contato específico pelo e-mail
+    function getContatoEmail($email){
+        # definir a variável de conexão
+        $link = getConnection();
+        # query de consulta(lista) para a tabela
+        $query = "select * from contact where contact_email like '{$email}'";
+        # envio da query e recebimento do resultado
+        $result = mysqli_query($link, $query);
+        # carregar a variável com os dados do banco
+        $contact = mysqli_fetch_assoc($result);
+            # retorna o contato carregado com os dados
+            return $contact;
+        } 
     # função para gravar os dados   
     function setContato($name, $email, $message){
         $link = getConnection();

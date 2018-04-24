@@ -12,4 +12,15 @@
         
         return $usuario;
     }
+    
+    function alterarSenha($senhaVelha, $senhaNova, $id){
+       $link = getConnection();
+       
+        $query = "update login set senha = md5('{$senhaNova}') where id = $id and senha = md5('{$senhaVelha}'";
+        
+        if (mysqli_query($link, $query)){
+            return true;
+        }
+        return false;
+    }
 
