@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Cadastro</title>
+</head>
+<body>
+	<div class="container" style="background-color:black; min-height:300px; width:100%; float:left;">
+	<div>
+	<form name="form1" method="post" action="resultado.jsp" style="background-color:lightgray; width:80%; margin:0 auto; margin-top:10px;">
+              
+		<div style="margin:5px 0 0 5px">
+			Seu Nome:
+            <input type="text" name="nome" value="">
+		</div>
+		<div style="margin:5px 0 0 5px">
+		Sexo:
+            <label><input type="radio" name="sexo" value="M"> M</label>
+            <label> <input type="radio" name="sexo" value="F"> F</label>
+        </div>
+		
+		<div style="margin:5px 0 10px 5px">
+		Idade:  
+		   <label><input type="radio" name="idade" value="crianca">0 - 12</label>
+           <label><input type="radio" name="idade" value="adolescente">13 - 18</label>
+           <label><input type="radio" name="idade" value="adulto"> 19 - 65</label>
+           <label><input type="radio" name="idade" value="idoso">66 - 120</label>
+		</div>
+            <input type="submit" name="Submit" value="enviar">
+</form>
+</div>
+</div>	
+</body>
+</html>
