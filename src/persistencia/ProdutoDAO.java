@@ -1,8 +1,8 @@
 package persistencia;
 
+import java.sql.PreparedStatement;
+import java.sql.Connection;
 import java.sql.SQLException;
-
-import com.mysql.jdbc.Connection;
 
 import entidade.Produto;
 
@@ -22,7 +22,7 @@ public class ProdutoDAO extends DAO {
 }
 	
 	public void salvar(Produto p) throws SQLException{
-		PreparedStatemente stmt = null;
+		PreparedStatement stmt = null;
 		
 		try {
 			stmt = conn.prepareStatement("insert into produto values(null, ?, ?)");
@@ -52,6 +52,8 @@ public class ProdutoDAO extends DAO {
 		try {
 			dao.salvar(produto);
 			System.out.println("Produto salvo com sucesso!");
-		} catch
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
 	}
 }
