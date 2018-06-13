@@ -29,12 +29,20 @@ public class ProdutoDAO extends DAO {
 			stmt.setString(1, p.getNome());
 			stmt.setInt(2, p.getQuantidade());
 			
+			//stmt.execute();
 			int flag = stmt.executeUpdate();
-			
+			/* stmt.executeUpdate() - dispara a instrução para o banco e retorna um valor
+			 * (0 ou 1), informando se executou com sucesso.
+			 * Onde 1 é o retorno de sucesso e 0 é o retorno da falha.
+			 */
 			if(flag == 0) 
 				throw new SQLException("Erro ao gravar no banco"); 
 				
 		} finally {
+			/*
+			 * (==) - igualdade
+			 * (!=) - diferença
+			 */
 			if(conn != null)
 				conn.close();
 			if(stmt != null)

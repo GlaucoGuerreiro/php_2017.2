@@ -1,4 +1,4 @@
-create database db_aula10;
+create schema if not exists db_aula10;
 
 use db_aula10;
 
