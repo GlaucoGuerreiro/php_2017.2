@@ -1,5 +1,5 @@
-create schema if not exists escola;
-use escola;
+create schema if not exists db_escola;
+use db_escola;
 create table alunos(
 	matricula int auto_increment,
 	nome varchar(150) not null,
