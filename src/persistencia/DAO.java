@@ -17,7 +17,7 @@ public class DAO {
 	}
 	
 	protected Connection abreConexao() throws SQLException {
-		Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/db_aula10", "root", "");
+		Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/db_aula09", "root", "");
 		return conn;
 	}
 	

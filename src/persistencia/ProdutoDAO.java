@@ -41,7 +41,7 @@ public class ProdutoDAO extends DAO {
 			 */
 
 			if (flag == 0)
-				throw new SQLException("Erro ao gravar no banco");
+				throw new SQLException("Erro ao gravar o produto no banco");
 
 		} finally {
 			/*
@@ -99,7 +99,7 @@ public class ProdutoDAO extends DAO {
 		}
 	}
 
-	public Produto buscar(String nome) throws SQLException {
+	public List<Produto> buscar(String nome) throws SQLException {
 
 		PreparedStatement stmt = null;
 		ResultSet rs = null;
@@ -110,12 +110,12 @@ public class ProdutoDAO extends DAO {
 			stmt.setString(1, '%' + nome + '%');
 
 			rs = stmt.executeQuery();
-			Produto produto = null;
-			if (rs.next()) {
-				produto = criaProduto(rs);
+			List<Produto> produtos = new ArrayList<Produto>();
+			while (rs.next()) {
+				produtos.add(criaProduto(rs));
 			}
 
-			return produto;
+			return produtos;
 		} finally {
 			if (conn != null)
 				conn.close();

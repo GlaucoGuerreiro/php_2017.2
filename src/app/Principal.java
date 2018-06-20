@@ -30,10 +30,10 @@ public class Principal {
 				break;
 				
 			case "atualizar":
-				System.out.print("Informe o nome: ");
-				produto.setNome(scan.nextLine());
+				System.out.print("Informe o ID: ");
+				produto.setId(Integer.parseInt(scan.nextLine()));
 
-				produto = localizar(produto.getNome());
+				produto = localizar(produto.getId());
 				
 				System.out.print("Informe o novo nome: ");
 				produto.setNome(scan.nextLine());
@@ -48,7 +48,7 @@ public class Principal {
 				System.out.print("Informe o nome: ");
 				produto.setNome(scan.nextLine());
 
-				System.out.println(localizar(produto.getNome()));
+				System.out.println(buscar(produto.getNome()));
 				
 				break;
 
@@ -60,7 +60,7 @@ public class Principal {
 				
 			case "excluir":
 				System.out.print("Informe o nome do produto: ");
-				produto = localizar(scan.nextLine());
+				produto = localizar(new Integer(scan.nextLine()));
 				
 				excluir(produto.getId());
 				break;
@@ -93,11 +93,11 @@ public class Principal {
 		}
 	}
 	
-	public static Produto localizar(String nome) {
+	public static Produto localizar(long id) {
 		ProdutoDAO dao = new ProdutoDAO();
 
 		try {
-			return dao.buscar(nome);
+			return dao.buscarPorId(id);
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
@@ -110,6 +110,17 @@ public class Principal {
 
 		try {
 			return dao.listar();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return new ArrayList<Produto>();
+	}
+	
+	public static List<Produto> buscar(String nome) {
+		ProdutoDAO dao = new ProdutoDAO();
+		
+		try {
+			return dao.buscar(nome);
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
