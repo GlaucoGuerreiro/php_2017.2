@@ -34,13 +34,7 @@ public class ClienteDao {
 					stmt.setInt(2, cliente.getIdCliente());
 				
 					stmt.executeUpdate();
-				}
-			}
-			
-			try(ResultSet rsKeys = stmt.getGeneratedKeys()){
-				if(rsKeys.next()){
-					cliente.setIdCliente(rsKeys.getInt(1));
-				
+					
 					stmt = conectar.prepareStatement("insert into endereco(logradouro, idcliente) values(?,?)");
 					stmt.setString(1, cliente.getEndereco().getLogradouro());
 					stmt.setInt(2, cliente.getIdCliente());
